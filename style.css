@@ -1,0 +1,109 @@
+*{font-family: 'Red Hat Display', sans-serif;}
+body{
+    margin: 0;
+}
+main{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    background-image: url(images/pattern-background-desktop.svg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: hsl(225, 100%, 94%);
+}
+@media (max-width: 767px){
+    main{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
+.container{
+    width: 350px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.image{
+    background-image: url(images/illustration-hero.svg);
+    width: 100%;
+    height: 11rem;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.info{
+    text-align: center;
+    padding:20px
+}
+.info h1{
+    color:hsl(223, 47%, 23%);
+}
+.info h1+p{
+    color:hsl(224, 23%, 55%);
+}
+.info .plan{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: hsla(225, 100%, 94%,0.3);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding:15px;
+    gap: 15px;
+}
+.info .price p:first-child{
+    margin:0 0 5px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+.info .price p:last-child{
+    margin:0;
+    color:hsl(224, 23%, 55%);
+}
+.info .plan a{
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+.info .plan a:hover{
+    color:hsl(245, 68%, 64%);
+    text-decoration: none;
+}
+.info button{
+    width: 100%;
+    margin: 25px 0;
+    color: hsl(0, 0%, 100%);
+    background-color:hsl(245, 75%, 52%);
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:0;
+    box-shadow: 3px 5px 10px 3px hsl(245, 100%, 89%);
+}
+.info button:hover{
+    background-color:hsl(245, 68%, 64%); 
+}
+.info button+p{
+    margin: 0;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.info button+p:hover{
+    color:hsl(223, 47%, 23%); 
+    cursor: pointer;
+}
+.attribution {margin-bottom: 5px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
